@@ -1,0 +1,37 @@
+body {
+    background: rgb(6, 71, 6);
+}
+
+.card {
+    /*
+    width: 14.375vw; 11.5vw * 1.25 
+    height: 20vw; 16vw * 1.25 
+    border: none; 
+    */ 
+}
+
+#cardpool {
+    height: 90vh;
+    display: grid;
+
+    /* 
+    grid-template-columns: 14.4vw 14.4vw 14.4vw 14.4vw;
+    grid-template-rows: repeat(4, 3fr); 
+    grid-template-columns: repeat(auto-fit, minmax(5vw, 14.4vw)); 
+    grid-gap: 10px;  
+    */
+
+    grid-template-columns: 14.4vw 14.4vw 14.4vw 14.4vw;
+  }
+
+@media screen and (min-width: 768px) {
+    #cardpool {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #cardpool {
+      grid-template-columns: repeat(4, 14.4vw);
+    }
+}
