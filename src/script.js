@@ -73,6 +73,12 @@ Deck = {
     cardpool.innerHTML = "";
     console.log("Debug: Deck reset");
   },
+
+  NewRound: () => {
+    const count = parseInt(deckselector.value);
+    Deck.ResetCards();
+    Deck.DrawCards(count);
+  }
 };
 
 window.onload = Deck.DrawCards(); //Loading cards after page was loaded
