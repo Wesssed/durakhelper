@@ -16,7 +16,7 @@ class Card {
     this.element = document.createElement("button");
     this.element.className = "card";
     this.element.id = this.rank + this.suit;
-    this.element.style.background = `url(/img/${this.rank}${this.suit}.png) top left no-repeat`;
+    this.element.style.background = `url(https://wesssed.github.io/durakhelper/img/${this.rank}${this.suit}.png) top left no-repeat`;
     this.element.style.backgroundSize = "cover";
     this.element.addEventListener("click", () => this.press());
 
